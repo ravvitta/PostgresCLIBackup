@@ -5,8 +5,11 @@ verify_ssl = true
 
 [dev-packages]
 pytest = "*"
+pytest-mock = "*"
+oci-cli = "*"
 
 [packages]
+boto3 = "*"
 
 [requires]
 python_version = "3.6"

@@ -44,5 +44,5 @@ def test_parser_with_known_drivers(parser):
     """
     The parser will not exit if the driver name is known.
     """
-    for driver in ['local', 's3']:
+    for driver in ['local', 'oci']:
         assert parser.parse_args([url, "--driver", driver, "destination"])
