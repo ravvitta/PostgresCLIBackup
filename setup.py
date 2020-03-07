@@ -6,11 +6,16 @@ with open('README.rst', encoding='UTF-8') as f:
 setup(
     name='pgbackup',
     version='0.1.0',
-    description='Database backups locally or to AWS S3.',
+    description='Database backups locally or to OCI',
     long_description=readme,
-    author='Keith',
-    author_email='keith@linuxacademy.com',
+    author='Ravi',
+    author_email='ravi.v.vittal@oracle.com',
     packages=find_packages('src'),
     package_dir={'': 'src'},
-    install_requires=[]
+    install_requires = ['oci'],
+    entry_points={
+        'console_scripts': [
+            'pgbackup=pgbackup.cli:main',
+        ],
+    }
 )
