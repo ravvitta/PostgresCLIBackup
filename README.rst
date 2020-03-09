@@ -1,7 +1,7 @@
 pgbackup
 ========
 
-CLI for backing up remote PostgreSQL databases locally or to AWS S3.
+CLI for backing up remote PostgreSQL databases locally or to OCI Object Storage
 
 Preparing for Development
 -------------------------
